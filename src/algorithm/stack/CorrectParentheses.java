@@ -20,6 +20,10 @@ public class CorrectParentheses {
             }
         }
 
+        if (!stack.isEmpty()) {
+            return "NO";
+        }
+
         return answer;
     }
 
