@@ -6,8 +6,8 @@ public class BinaryDfs {
     if (n == 0) {
       return;
     } else {
-      dfs(n/2);
-      System.out.print(n%2);
+      dfs(n / 2);
+      System.out.print(n % 2);
     }
   }
 
