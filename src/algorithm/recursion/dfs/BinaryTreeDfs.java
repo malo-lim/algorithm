@@ -1,15 +1,15 @@
 package algorithm.recursion.dfs;
 
-class Node {
-  int data;
-  Node lt, rt;
-  public Node(int val) {
-    data = val;
-    lt = rt = null;
-  }
-}
-
 public class BinaryTreeDfs {
+
+  private static class Node {
+    int data;
+    Node lt, rt;
+    public Node(int val) {
+      data = val;
+      lt = rt = null;
+    }
+  }
 
   Node root;
   public void dfs(Node root) {
