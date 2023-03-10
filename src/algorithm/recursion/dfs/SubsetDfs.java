@@ -1,13 +1,13 @@
 package algorithm.recursion.dfs;
 
 public class SubsetDfs {
-  static int n;
+  static int N;
   static boolean[] check;
 
   public void dfs(int l) {
-    if (l == n + 1) {
+    if (l == N + 1) {
       StringBuilder temp = new StringBuilder();
-      for (int i=1; i<=n; i++) {
+      for (int i = 1; i<= N; i++) {
         if (check[i]) {
           temp.append(i).append(" ");
         }
@@ -28,8 +28,8 @@ public class SubsetDfs {
 
   public static void main(String[] args) {
     SubsetDfs main = new SubsetDfs();
-    n = 3;
-    check = new boolean[n + 1];
+    N = 3;
+    check = new boolean[N + 1];
     main.dfs(1);
   }
 }
