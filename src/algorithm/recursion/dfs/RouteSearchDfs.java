@@ -36,6 +36,7 @@ public class RouteSearchDfs {
       int b = scanner.nextInt();
       graph[a][b] = 1;
     }
+
     visit[1] = true;
     main.dfs(1);
     System.out.println(answer);
