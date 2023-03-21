@@ -21,7 +21,7 @@ public class CoordinateAlignment {
       /*
        정렬은 일단 음수가 나오도록 하기.
        밑의 값은 오름차순 정렬 방식이고
-       내림차순이 되려면 point.y - this.y, point.x - point.y가 되어야 한다.
+       내림차순이 되려면 point.y - this.y, point.x - this.x가 되어야 한다.
        */
       if (this.x == point.x) {
         return this.y - point.y;
