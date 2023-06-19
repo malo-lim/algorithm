@@ -1,4 +1,4 @@
-package baekjoon;
+package baekjoon.datastructure;
 
 import java.io.IOException;
 import java.util.Scanner;
