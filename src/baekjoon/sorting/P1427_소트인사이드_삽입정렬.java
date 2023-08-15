@@ -15,7 +15,7 @@ public class P1427_소트인사이드_삽입정렬 {
 
       // 내림차순 정렬
       for (j = i - 1; j >= 0 && target > Integer.parseInt(N[j]); j--) {
-        N[j+1] = N[j];
+        N[j + 1] = N[j];
       }
 
       /*
@@ -23,10 +23,10 @@ public class P1427_소트인사이드_삽입정렬 {
        * 타겟 원소는 j번째 원소 뒤에 와야한다.
        * 그러므로 타겟은 j + 1 에 위치하게 된다.
        */
-      N[j+1] = Integer.toString(target);
+      N[j + 1] = Integer.toString(target);
     }
 
-    for (String s: N) {
+    for (String s : N) {
       bw.write(s);
     }
     bw.close();
